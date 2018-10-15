@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CortexAccess
 {
     // Reponsible for login and manage access
-    public sealed class AccessController : BaseController
+    public sealed class AccessController : BaseController22
     {
         public enum AccessState:int 
         {
