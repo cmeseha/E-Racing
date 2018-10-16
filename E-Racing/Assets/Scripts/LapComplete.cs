@@ -18,6 +18,8 @@ public class LapComplete : MonoBehaviour {
 
     public GameObject RaceFinish;
 
+    public GameObject RestartButton;
+
 
     private void OnTriggerEnter() {
         RaceFinish.SetActive(true); //starts rotation cutscene
@@ -57,6 +59,7 @@ public class LapComplete : MonoBehaviour {
 
         HalfLapTrigger.SetActive(true);
         LapCompleteTrigger.SetActive(false);
+        RestartButton.SetActive(true);
 
     }
 
