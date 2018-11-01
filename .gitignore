@@ -5,6 +5,11 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
+
+# Custom one I put here
+Assets/Scripts/EnvironmentVariables
+
+
 # Visual Studio cache directory
 .vs/
 
