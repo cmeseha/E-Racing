@@ -11,7 +11,6 @@ public class BrainControlActive : MonoBehaviour {
 	void Start () {
         brainControl.GetComponent<CarController>().enabled = true;
         brainControl.GetComponent<CarAIControl>().enabled = true;
-        brainControl.GetComponent<BrainControl>().enabled = true;
     }
 
 }
