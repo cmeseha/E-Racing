@@ -45,7 +45,7 @@ public class TCPTestServer : MonoBehaviour {
 	private void ListenForIncommingRequests () {
 		try {
 			// Create listener on localhost port 8052.
-			tcpListener = new TcpListener(IPAddress.Parse("127.0.0.1"), 8052);
+			tcpListener = new TcpListener(IPAddress.Parse("127.0.0.1"), 6002);
 			tcpListener.Start();
 			Debug.Log("Server is listening");
 			Byte[] bytes = new Byte[1024];
@@ -74,7 +74,7 @@ public class TCPTestServer : MonoBehaviour {
 	/// Send message to client using socket connection.
 	/// </summary>
 	private void SendMessage() {
-		if (connectedTcpClient == null) {             
+		if (connectedTcpClient == null) {
 			return;
 		}
 
